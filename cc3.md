@@ -104,9 +104,8 @@ And remember self-join, aggregation, order-by and nested query.
 
 ### Option 1: Using AWS Educate
 
-Use AWS educate and launch the following ami 
+Use AWS educate and launch an instance using the ami given in `create_EC2.py` in week 1 lab. 
 
-* `ami-035648795d5cd000a`
 
 This is an image pre-installed with ubuntu and mysql 8. The data folder needed in this cohort class is in `/home/ubuntu/lab3_sql`.
 
@@ -149,6 +148,34 @@ create database cc3;
 use cc3;
 source /home/ubuntu/lab3_sql/setup_v8.sql
 ```
+
+### Trouble shooting 
+
+If you encounter the following error when loading the data
+
+```
+ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option 
+so it cannot execute this statement
+```
+
+Append the following line to the file 
+
+* Ubuntu: `/etc/mysql/mysql.conf.d/mysqld.cnf`
+* MacOS X (brew): `/usr/local/etc/my.cnf`
+
+```
+secure-file-priv = "<folder where the CSV files are located>"
+```
+
+e.g.
+
+```
+secure-file-priv = "/tmp/sql/"
+```
+
+Then restart mysql service. Make sure that the above folder is accessible by MySQL client.
+
+
 
 ## Exercise 1
 
