@@ -1,0 +1,17 @@
+apply plugin: 'java'
+description """Hadoop MapReduce WordCount Example Using Java"""
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+/* In this section you declare where to find the dependencies of your project*/
+repositories {
+   
+    jcenter()
+    mavenCentral()
+}
+dependencies {
+    
+  compile group: 'org.apache.hadoop', name: 'hadoop-hdfs', version: '3.3.0'
+  compile group: 'org.apache.hadoop', name: 'hadoop-common', version: '3.3.0'
+  compile group: 'org.apache.hadoop', name: 'hadoop-mapreduce-client-core', version: '3.3.0'
+     
+}
