@@ -410,7 +410,7 @@ $ flintrock destroy <your_cluster_name>
 
 ```
 
-Note that you will loose everything you installed on the cluster. 
+Note that you will lose everything you installed on the cluster. 
 
 
 
