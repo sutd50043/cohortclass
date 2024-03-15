@@ -96,11 +96,11 @@ Let $R$, $R'$ and $R''$ be relations, the subset of requivalence rules is as fol
 10. $R \cup R' \equiv R \cup R$
 11. $R \cap (R' \cap R'') \equiv (R \cap R') \cap R''$
 12. $R \cup (R' \cup R'') \equiv (R \cup R') \cup R''$
-13. $\Pi_{a_1 \cup a_2} (R \bowtie_{c} R') \equiv \Pi_{a_1}(R) \bowtie_{c} \Pi_{a_2}(R')$  if $attr(c) \equiv a_1 \cup a_2$.
-14. $\Pi_{a_1 \cup a_2} (R \bowtie_{c} R') \equiv \Pi_{a_1 \cup a_2}(\Pi_{a_1\cup a_3}(R) \bowtie_{c} \Pi_{a_2\cup a_4}(R') )$ if $a_3 \cup a_4 \equiv attr(c)$
+13. $\Pi_{a_1 \cup a_2} (R \bowtie_{c} R') \equiv \Pi_{a_1}(R) \bowtie_{c} \Pi_{a_2}(R')$  if $attr(c) \subseteq a_1 \cap a_2$.
+14. $\Pi_{a_1 \cup a_2} (R \bowtie_{c} R') \equiv \Pi_{a_1 \cup a_2}(\Pi_{a_1\cup a_3}(R) \bowtie_{c} \Pi_{a_2\cup a_4}(R') )$ if $attr(c) \subseteq a_3 \cap a_4$
 15. $\Pi_{a}(R \cup R') \equiv \Pi_{a}(R) \cup \Pi_{a}(R')$
 16. $\Pi_{a}(\sigma_{c}(R)) \equiv \sigma_{c}(\Pi_{a}(R))$ if $attr(c) \subseteq a$
-17. $\sigma_{c}(R - R') \equiv \sigma_{c}(R) - \sigma_{c}(R') \equiv \sigma_{c}(R) - R'$
+17. $\sigma_{c}(R - R') \equiv \sigma_{c}(R) - R'$
 18. $\sigma_{c}(R \cap R') \equiv \sigma_{c}(R) \cap \sigma_{c}(R')$
 19. $\sigma_{c}(R \cup R') \equiv \sigma_{c}(R) \cup \sigma_{c}(R')$
 
