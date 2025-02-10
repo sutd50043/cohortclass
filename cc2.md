@@ -6,7 +6,7 @@
 By this end of this cohort class you should be able to 
 
 1. Convert an ER model into a relational model
-1. Use relatoin algebrac to query a relational model
+1. Use relational algebra to query a relational model
 
 
 
