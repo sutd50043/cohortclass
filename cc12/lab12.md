@@ -26,8 +26,8 @@ By the end of this lesson, you are able to
 
 The lab consists of three files on Google Colab. Please go through them and follow the instructions: 
 
-1. https://drive.google.com/file/d/1e-eKrRyuwfSIwCddnmzhl3aF0TLvbTIZ/view?usp=sharing
-2. https://drive.google.com/file/d/1S7j6l1RLFzyd1BrA3TTuKFGaWuIOKlah/view?usp=sharing
-3. https://drive.google.com/file/d/1maBbvcyH0gXJBP-CsUdSGc_dvH7yA34h/view?usp=sharing
+1. [https://colab.research.google.com/drive/1aXdiScRUGz-JNrF6_zXz_O_oVpMywlw2?usp=sharing](https://colab.research.google.com/drive/1aXdiScRUGz-JNrF6_zXz_O_oVpMywlw2?usp=sharing)
+2. [https://colab.research.google.com/drive/1Tp_h13OvGSgz8GtetAUdHq9-fqxDAo1A?usp=sharing](https://colab.research.google.com/drive/1Tp_h13OvGSgz8GtetAUdHq9-fqxDAo1A?usp=sharing)
+3. [https://colab.research.google.com/drive/1zCx2FIAAo0sZUziRTsPJqsTOVCUqvv-n?usp=sharing](https://colab.research.google.com/drive/1zCx2FIAAo0sZUziRTsPJqsTOVCUqvv-n?usp=sharing)
 
 
