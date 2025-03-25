@@ -192,7 +192,7 @@ graph
 a("&Pi;<sub>sname</sub>") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- c
 c("&sigma;<sub>rating >= 5 </sub>") --- d
-d("&bowtie;") --- e("Sailor")
+d("&bowtie;") --- e("Sailors")
 d("&bowtie;") --- f("Reserves")
 ```
 
@@ -206,7 +206,7 @@ graph
 a("&Pi;<sub>sname</sub>") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- c
 c("&sigma;<sub>rating >= 5</sub>") --- d
-d("&bowtie;") --- e("Sailor <br/> heap scan")
+d("&bowtie;") --- e("Sailors <br/> heap scan")
 d("&bowtie;<br/> nested loop join") --- f("Reserves <br/> heap scan")
 ```
 
@@ -220,20 +220,20 @@ graph
 a("&Pi;<sub>sname</sub>") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- d
 d("&bowtie;") --- c
-c("&sigma;<sub>rating >= 5</sub>") --- e("Sailor <br/> heap scan")
+c("&sigma;<sub>rating >= 5</sub>") --- e("Sailors <br/> heap scan")
 d("&bowtie;<br/> nested loop join") --- f("Reserves <br/> heap scan")
 ```
 
 ### Question 3.3 - What is the cost of the following plan?
 
-Assuming iterator model is used, left sub relation is used as outer relation, values are uniformly distributed, there is no correlation among attributes,
+Assuming iterator model is used, left sub relation is used as outer relation, values are uniformly distributed, there is no correlation among attributes.
 
 
 ```mermaid
 graph
 a("&Pi;<sub>sname</sub>") --- d
 d("&bowtie;") --- c
-c("&sigma;<sub>rating >= 5</sub>") --- e("Sailor <br/> heap scan")
+c("&sigma;<sub>rating >= 5</sub>") --- e("Sailors <br/> heap scan")
 d("&bowtie;<br/> nested loop join") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- f("Reserves <br/> heap scan")
 ```
@@ -250,7 +250,7 @@ a("&Pi;<sub>sname</sub>") --- d
 d("&bowtie;<br/> nested loop join") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- f("Reserves <br/> heap scan")
 d("&bowtie;<br/> nested loop join") --- c
-c("&sigma;<sub>rating >= 5</sub>") --- e("Sailor <br/> heap scan")
+c("&sigma;<sub>rating >= 5</sub>") --- e("Sailors <br/> heap scan")
 ```
 
 ### Question 3.5 - What is the cost of the following plan?
@@ -262,7 +262,7 @@ Assuming iterator model is used, except node being materialized, left sub relati
 graph
 a("&Pi;<sub>sname</sub>") --- d
 d("&bowtie;") --- c
-c("&sigma;<sub>rating >= 5</sub>") --- e("Sailor <br/> heap scan")
+c("&sigma;<sub>rating >= 5</sub>") --- e("Sailors <br/> heap scan")
 d("&bowtie;<br/> nested loop join") --- b
 b("&sigma;<sub>bid = 100</sub>  <br/> Materialized")  --- f("Reserves <br/> heap scan")
 ```
@@ -279,7 +279,7 @@ Assuming iterator model is used, except node being materialized, left sub relati
 graph
 a("&Pi;<sub>sname</sub>") --- d
 d("&bowtie;") --- c
-c("&sigma;<sub>rating >= 5</sub>") --- e("Sailor <br/> heap scan")
+c("&sigma;<sub>rating >= 5</sub>") --- e("Sailors <br/> heap scan")
 d("&bowtie;<br/> Block nested loop join") --- b
 b("&sigma;<sub>bid = 100</sub>  <br/> Materialized")  --- f("Reserves <br/> heap scan")
 ```
@@ -298,10 +298,10 @@ b("&Pi;<sub>sid</sub>")  --- f
 f("&sigma;<sub>bid = 100</sub>") --- g("Reserves <br/> heap scan")
 d("&bowtie;<br/> Block nested loop join") --- c
 c("&Pi;<sub>sid,name</sub>") --- h
-h("&sigma;<sub>rating >= 5</sub>") --- e("Sailor <br/> heap scan")
+h("&sigma;<sub>rating >= 5</sub>") --- e("Sailors <br/> heap scan")
 ```
 
-### Question 3.8 - Suppose Reserves has a clustered B+ tree index on `bid`, Sailor has a clustered B+ Tree index on `sid`, both indices are in the memory. What is the cost of the following plan?
+### Question 3.8 - Suppose Reserves has a clustered B+ tree index on `bid`, Sailors has a clustered B+ Tree index on `sid`, both indices are in the memory. What is the cost of the following plan?
 
 Assuming iterator model is used, left sub relation is used as outer relation, values are uniformly distributed, there is no correlation among attributes.
 
@@ -312,5 +312,5 @@ a("&Pi;<sub>sname</sub>") --- c
 c("&sigma;<sub>rating >= 5</sub>") --- d
 d("&bowtie;<br/> index join") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- f("Reserves <br/> index scan")
-d("&bowtie;<br/> index join") --- e("Sailor <br/> index scan")
+d("&bowtie;<br/> index join") --- e("Sailors <br/> index scan")
 ```
