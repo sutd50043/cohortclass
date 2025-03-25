@@ -142,6 +142,7 @@ $$
 \Pi_{name}(\sigma_{salary >100}(\Pi_{name,salary}(People)))
 $$
 
+Which of he following expression is equivalent to the above?
 
 1. $\Pi_{name}(\sigma_{salary>100}(People))$
 1. $\Pi_{name}(\sigma_{salary>100}(\Pi_{salary}(People)))$
