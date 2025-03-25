@@ -191,7 +191,7 @@ Consider the following relations:​
 graph
 a("&Pi;<sub>sname</sub>") --- b
 b("&sigma;<sub>bid = 100</sub>")  --- c
-c("&sigma;<sub>rating >= 5</sub>") --- d
+c("&sigma;<sub>rating >= 5 </sub>") --- d
 d("&bowtie;") --- e("Sailor")
 d("&bowtie;") --- f("Reserves")
 ```
