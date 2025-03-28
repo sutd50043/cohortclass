@@ -1,7 +1,7 @@
 ---
 author: ISTD, SUTD
 title: Lab 10 Hadoop Distributed File System and MapReduce
-date: March 17, 2024
+date: April 8, 2025
 logo: 
 footnote:
 header-includes: |
