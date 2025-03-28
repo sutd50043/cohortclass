@@ -40,7 +40,7 @@ If you have any issues with Flintrock, you may also proceed to use the AMI image
 ## Step 1: Preparation
 
 Assume that we have already setup an AWS IAM user with an access key and an access secret. 
-If the user has not been created, create one by recalling the steps from Lab 1, `boto3` exercise.
+If the user has not been created, create one by recalling the steps from Lab 1, `boto3` exercise. Don't forget to chmod 400 it. 
 
 If you are using AWS educate account you should be able to find the IAM access id and secret here
 
@@ -118,13 +118,13 @@ providers:
   ec2:
     key-name: <the_pem_key_name_you_used_when_creating_pem_file>
     identity-file: <path_to_your_pem_file.pem>
-    # key-name: kenny_lu_sutd_aws_us_east1
-    # identity-file: /home/luzm/kenny_lu_sutd_aws_us_east1.pem
+    # key-name: do_key
+    # identity-file: /home/do_key.pem
     instance-type: t2.medium
     # instance-type: m5.large
     region: us-east-1
     # availability-zone: <name>
-    ami: ami-0b5eea76982371e91 # Amazon Linux 2 5.10
+    ami: ami-02f624c08a83ca16f # Amazon Linux 2 5.10
     user: ec2-user
     tenancy: default  # default | dedicated
     ebs-optimized: no  # yes | no
