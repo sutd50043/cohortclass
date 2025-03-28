@@ -432,7 +432,7 @@ Leveraging the two combinators, we built the following combinators
 * `reduceByKey` and `reduceByKey2`
 
 
-# Exercise 1:
+## Exercise 1:
 
 The first four exercises are run locally on your machine using the toy library. 
 
@@ -450,7 +450,7 @@ Sample test cases
 ```
 
 
-# Exercise 2: 
+## Exercise 2: 
 
 Suppose you have a big data set (many terabytes) with many records of the following form:
 `(productID, supplierID, price)`
@@ -492,14 +492,8 @@ In that case you may want to start with a version using for loops and
 dictionaries. Then from there you can start to replace loops with map,
 reduce and other combinators found in the toy MapReduce library.
 
-### mini discussion
 
-Besides `reduceByKey2` itself, name one operation that can
-only be defined using `reduceByKey2` but
-not `reduceByKey`. Explain why it can't be implemented using `reduceByKey`.
-
-
-# Relational Algebra and MapReduce
+## Relational Algebra and MapReduce
 
 Recall that in Lecture 2, we learned about Relational Algebra in the
 context of RDBMS. Assuming that we are dealing with tabular (CSV / TSV) data in
@@ -535,14 +529,14 @@ filter(lambda x:price(x) > 100, priceTable)
 schema "productID, stockLevel", can we implement `priceTable`
 $\Join_{productID}$ `stockTable`? 
 
-# Exercise 3: 
+### Exercise 3: 
 
 Assuming that we have enough memory to accomodate one table in the RAM, implement the join operation
 using the toy MapReduce library.
 
 
 
-# Exercise 4:
+# Exercise 4: non-linear structures
 
 The concept of `map` and `reduce` is applicable even to non-linear
 data structure.
@@ -623,9 +617,7 @@ myllist = [ ["one", "two", "two", "three", "three", "three"],
 
 
 
-
-
-# Hadoop JVM API
+# Hadoop JVM API (on Flintrock cluster)
 
 Hadoop's JVM API is the native API. It offers
 
@@ -716,7 +708,7 @@ and the reducer classes as well as the input and output format.
 
 
 
-# Exercise 5
+## Exercise 5
 
 Build and run WordCount job in JVM API.
 
@@ -799,7 +791,7 @@ You can test that your server is running well:
 $ hdfs dfsadmin -report
 ```
 
-## Shutdown
+# Shutdown
 
 Don't forget to shut down your hadoop before shutting down your image. 
 
