@@ -536,12 +536,12 @@ using the toy MapReduce library.
 
 
 
-# Exercise 4: non-linear structures
+## Exercise 4: non-linear structures
 
 The concept of `map` and `reduce` is applicable even to non-linear
 data structure.
 
-## Ex 4.1 Binary Tree Data 
+### Ex 4.1 Binary Tree Data 
 
 Given the following data structure
 
@@ -585,7 +585,7 @@ mytree = Tree(17, Tree(11, Tree(4), Tree(13)), Tree(5, None, Tree(30)))
 ```
 
 
-## Ex 4.2 List of List Data
+### Ex 4.2 List of List Data
 
 
 Given the following data
