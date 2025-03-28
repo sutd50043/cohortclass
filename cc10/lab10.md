@@ -414,11 +414,13 @@ Note that you will lose everything you installed on the cluster.
 
 
 
-# Start with the Toy MapReduce library
+# Start with the Toy MapReduce library (LOCAL)
+
+**You can exit the cluster for now and run the following exercises on your local machine or Google Colab.**
 
 During the lecture, we developed a toy MapReduce library in Python. It is sometimes useful to design 
 Map Reduce jobs in this toy library before diving into the specific implementation such as 
-Hadoop MapReduce or Spark.
+Hadoop MapReduce or Spark. 
 
 Recall that `map` and `reduce` are the two basic combinators/functions that enable data parallelism.
 
