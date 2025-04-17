@@ -750,13 +750,13 @@ Dont't forget to shutdown your hadoop cluster before shutting the VM.
 
 For those of you who have trouble launching the cluster with Flintrock, we provide an AMI image with a single node that has Hadoop and Spark. 
 
-Image info: **AMIID: ami-0ed5085c72555f350**
+Image info: **AMIID: ami-0be2c18337e82ec8a**
 
 This needs to run on instance type: t2-medium (or up)
 
 ## Setting up the image
 
-In the EC2 dashboard you can go to Images -> AMIs on the left hand side. In the search box, search for `ami-0ed5085c72555f350`. 
+In the EC2 dashboard you can go to Images -> AMIs on the left hand side. In the search box, search for `ami-0be2c18337e82ec8a`. 
 
 Now you can check the sutd50043-hadoop-ubuntu image that appeared and clikc the yellow button `Launch instance from AMI`. 
 
