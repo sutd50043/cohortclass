@@ -149,6 +149,12 @@ use cc3;
 source /home/ubuntu/lab3_sql/setup_v8.sql
 ```
 
+#### Note
+In the relational model diagram above, we find that the `station` table has a foreign key `zip_code` referencing `weather`.`zip_code`. 
+Note that `zip_code` is not a primary key in the table `weather`. In standard SQL, this is disallowed, as all referenced columns must be primary key columns. 
+However MySQL version <= 8 actually supports this exception because `zip_code` is an indexed column in the `weather` table. 
+For the ease of setup, we commented up this foreign key constraint for the time-being as we don't need it in this cohort exercise. 
+
 ### Trouble shooting 
 
 If you encounter the following error when loading the data
