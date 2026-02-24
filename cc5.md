@@ -74,7 +74,7 @@ It maintains a set of integer values of $n$ LSB. $G$ denotes the global value of
 
 
 ##### Bucket Hashing Insertion
-To insert a value $X$ (for simplicity, we treat $X$ same as $hash(X)$)
+To insert a value $X$ (for simplicity, we treat $X$ same as $hash(X)$ )
 
 1. lookup the bucket for $X$ based on the last $G$ bits of $X$.
     1. if the bucket $i$ is not full, insert $X$ there.
