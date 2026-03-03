@@ -119,7 +119,7 @@ $$B(R) +  B(S)$$
 ## Exercise 1 
 
 
-Given 2 relations $R$ and $S$.​ $R$ has 100 pages, 100 records per page.​ $S$ has 50 pages, 50 records per pages. Suppose we have 20 buffer frames.​
+Given 2 relations $R$ and $S$.​ $R$ has 100 pages, 100 records per page.​ $S$ has 50 pages, 50 records per page. Suppose we have 20 buffer frames.​
 
 
 1. What is the I/O cost of joining $R$ and $S$ with nested loop join, using $S$ as outer relation?
