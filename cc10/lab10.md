@@ -758,7 +758,7 @@ This needs to run on instance type: t2-medium (or up)
 
 In the EC2 dashboard you can go to Images -> AMIs on the left hand side. In the search box, search for `ami-0be2c18337e82ec8a`. 
 
-Now you can check the sutd50043-hadoop-ubuntu image that appeared and clikc the yellow button `Launch instance from AMI`. 
+Now you can check the sutd50043-hadoop-ubuntu image that appeared and click the yellow button `Launch instance from AMI`. 
 
 Be sure to select at least a t2-medium instance size, and add your key pair for ssh access, and create your instance. 
 
