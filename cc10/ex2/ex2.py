@@ -3,7 +3,7 @@
 # fix path if needed
 import os
 print(os.getcwd())
-dir = '/Users/dorien_herremans/Dropbox/DoBrain/AC/Courses/big data 2023/big data 2023/lab/lab10/ex2/'
+dir = './ex2/'
 
 def read_db(filename):
     db = []
