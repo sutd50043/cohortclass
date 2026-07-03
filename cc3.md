@@ -107,7 +107,16 @@ And remember self-join, aggregation, order-by and nested query.
 Use AWS educate and launch an instance using the ami given in `create_EC2.py` in week 1 lab. 
 
 
-This is an image pre-installed with ubuntu and mysql 8. The data folder needed in this cohort class is in `/home/ubuntu/lab3_sql`.
+This is an image pre-installed with ubuntu and mysql 8. The data folder needed in this cohort class is in `/home/ubuntu/lab3_sql`. In case it is not there, you can 
+use the following command to download the .sql file.
+
+```sh
+sudo apt install python3-pip
+sudo apt install pipenv 
+pipenv shell
+pip install gdown​
+gdown "https://drive.google.com/uc?id=1g_4t-hf5PQIDpEdm5jhC5lnDxAWSnHSw"
+```
 
 ### Option 2: Using your own machine
 
