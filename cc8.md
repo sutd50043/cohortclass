@@ -82,7 +82,7 @@ The cost of this approach is $B(R) +B(S)$ because we scan both tables exactly on
 
 ## Recap Equivalence rules
 
-Let $R$, $R'$ and $R''$ be relations, the subset of requivalence rules is as follows,
+Let $R$, $R'$ and $R''$ be relations, the subset of equivalence rules is as follows,
 
 1. $\sigma_{c_1}(\sigma_{c_2}(R)) \equiv \sigma_{c_1 \wedge c_2}(R)$ 
 2. $\sigma_{c_1}(\sigma_{c_2}(R)) \equiv \sigma_{c_2}(\sigma_{c_1}(R))$
