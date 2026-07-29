@@ -1,7 +1,7 @@
 ---
 author: ISTD, SUTD
 title: Lab 11 Spark
-date: Feb 7, 2024
+date: July, 2026
 logo: 
 footnote:
 header-includes: |
@@ -24,7 +24,7 @@ By the end of this lesson, you are able to
 # Google Colab versus aws
 
 You have two options to run this lab: 
-* Google Colab file: [https://colab.research.google.com/drive/1ZYjP-g9ZO_jqGXbGA_8uJt4hhroWE9m8?usp=sharing](https://colab.research.google.com/drive/1ZYjP-g9ZO_jqGXbGA_8uJt4hhroWE9m8?usp=sharing)
+* Google Colab file: [https://colab.research.google.com/drive/1l-0_2Txr_2it1MAMdv14q2YXeBKHdvbB?usp=sharing](https://colab.research.google.com/drive/1l-0_2Txr_2it1MAMdv14q2YXeBKHdvbB?usp=sharing)
 * Instructions below on aws AMI image or Flintrock cluster as per the previous class. 
 
 The PySpark code you write will be identical, save for the URL / local file path from which you load the files. If you opt for Google Colab, then you can switch to the instructions there. 
